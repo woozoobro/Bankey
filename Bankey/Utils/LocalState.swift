@@ -4,6 +4,7 @@
 //
 //  Created by 우주형 on 2023/12/03.
 //
+
 import Foundation
 
 public class LocalState {
@@ -16,7 +17,7 @@ public class LocalState {
     get { return UserDefaults.standard.bool(forKey: Keys.hasOnboarded.rawValue) }
     set(newValue) {
       UserDefaults.standard.set(newValue, forKey: Keys.hasOnboarded.rawValue)
-      UserDefaults.standard.synchronize()
+//      UserDefaults.standard.synchronize()
     }
   }
 }
